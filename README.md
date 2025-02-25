@@ -1,6 +1,7 @@
 # KissMeTest
 Запрос для выполнения 3 задания
-SELECT
+
+'''SELECT
     DATE(FROM_UNIXTIME(t1.time)) as load_date,
     COUNT(t2.player_id) as successful_loads,
     COUNT(t1.ip) as total_loads,
@@ -9,4 +10,4 @@ FROM loads as t1
 LEFT JOIN sessions as t2
 ON t1.ip = t2.ip AND t1.time < t2.login_time
 GROUP BY load_date
-ORDER BY load_date desc
+ORDER BY load_date desc'''
